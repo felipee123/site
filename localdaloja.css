@@ -5,32 +5,10 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-
-.background{
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    max-width: 100%;
-    height: 100vh;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.mt-4 {
-    margin-top: 400px;
-}
 
 header{
     display: flex;
@@ -190,89 +168,13 @@ section h1{
     text-align: center;
     background-color: #ff6721;
     color: #000000;
-       
+   
 }
 
-/* a parte da imagem */
+/*loocal*/
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: "Arial";
-    gap: 16px;
-    background-image: url(imagem\E83-1128-060_zoom1.webp)
-  }
-  
-  .card {
-    margin-top: 10px;
-    background-color: #fff;
-    width: 32%; /* Ajuste a largura conforme necessário */
-    height: 560px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #aaaa;
-    display: flex; /* Usar flexbox para alinhar itens */
-    margin-right: 10px;
-  }
-  
-  .image-container {
-    flex: 1; /* Distribui igualmente o espaço entre as imagens */
-    display: flex; /* Para alinhar itens verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    overflow: hidden; /* Evita que as imagens ultrapassem seus contêineres */
-  }
-  
-  
-  .card img {
-    width: 100%; /* Redimensiona a largura para preencher o contêiner pai */
-    height: 100%; /* Define a altura como metade do contêiner pai */
-    object-fit: cover; /* Garante que a imagem cubra todo o espaço alocado */
-    border-top-left-radius: 12px; /* Borda arredondada */
-    border-top-right-radius: 12px; /* Borda arredondada */
-  }
-  
-  
-  .card div {
-    flex: 1; /* Ocupa todo o espaço restante */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    padding: 8px; /* Espaçamento interno */
-  }
-  
-  .card h1 {
-    font-size: 1.2rem;
-  }
-  
-  .card h2 {
-    font-size: 0.9rem;
-    color: #000000aa;
-  }
-  
-  .card button {
-    background-color: #f4a460;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-  
-  .card button:hover {
-    background-color: #f4a460;
-    cursor: pointer;
-}
 
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-        height: 800px;
-    }
+#map {
+    height: 400px;
+    width: 100%;
 }

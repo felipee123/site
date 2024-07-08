@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,8 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     list-style: none;
+    
 }
-
 .background{
     
     background-repeat: no-repeat;
@@ -16,6 +17,9 @@
     max-width: 100%;
     height: 100vh;
 }
+
+
+
 
 .row {
     display: flex;
@@ -151,7 +155,6 @@ section h1{
 }
 
 
-
 #Contato{
     display: flex;
     gap: 3rem;
@@ -190,7 +193,7 @@ section h1{
     text-align: center;
     background-color: #ff6721;
     color: #000000;
-       
+   
 }
 
 /* a parte da imagem */
