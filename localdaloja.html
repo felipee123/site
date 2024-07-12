@@ -14,6 +14,11 @@
         #map {
             height: 400px;
             width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #map iframe {
+            width: 100%;
         }
     </style>
 </head>
@@ -49,7 +54,9 @@
         <!-- Adicione a seção do Google Maps aqui -->
         <section id="localizacao">
             <h1>Localização da Loja</h1>
-            <div id="map"></div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15744.304592467532!2d-36.6201884!3d-9.4147193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7065f9f6e877b55%3A0xce1e31c2c46177f5!2sR.%20Correia%20Paes%2C%2086%20-%20Centro%2C%20Palmeira%20dos%20%C3%8Dndios%20-%20AL%2C%2057600-090!5e0!3m2!1spt-BR!2sbr!4v1720720999872!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <section class="Contato" id="Contato">
@@ -91,21 +98,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        function initMap() {
-            var loja = {lat: -9.40731, lng: -36.63027}; // Coordenadas da loja
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: loja
-            });
-            new google.maps.Marker({
-                position: loja,
-                map: map
-            });
-        }
-    </script>
-    <script src="https://maps.app.goo.gl/kR6xoKGvWQSzQUco8" async defer>
-    </script>
 </body>
 </html>
