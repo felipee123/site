@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.background{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mt-4 {
+    margin-top: 400px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color:#ff6721;
+    padding: 14px 14%;
+}
+
+
+
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover{
+    color: #ffffff;
+}
+
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover{
+    color: #ffffff;
+}
+
+.Meio{
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+}
+
+.Meio h1{
+    font-size: 4rem;
+    
+}
+
+.Meio button{
+    background-color: #ff6721;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.Meio button:hover{
+      background-color: #ff6721;
+      transform: scaleY(1.2);
+}
+
+section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.text-cta{
+    padding-left: 5rem;
+}
+
+.text-cta h6{
+    font-size: 17px;
+	font-weight: 500;
+	letter-spacing: .6px;
+	margin-bottom: 14px;
+
+}
+
+.text-cta h4{
+    font-size: 3.3rem;
+	line-height: 1.2;
+	letter-spacing: .6rem;
+	margin-bottom: 30px;
+}
+
+.text-cta a{
+    background-color: #ff6721;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.text-cta a:hover{
+    background-color: #ff6721;
+      transform: scaleY(1.2);
+
+}
+
+
+
+#Contato{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    background-color: #ff6721;
+    padding: 5rem;
+    margin-top: 5rem;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff6721;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #000000;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #ff6721;
+    color: #000000;
+       
+}
+
+/* a parte da imagem */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Arial";
+    gap: 16px;
+    background-image: url(imagem\E83-1128-060_zoom1.webp)
+  }
+  
+  .card {
+    margin-top: 10px;
+    background-color: #fff;
+    width: 32%; /* Ajuste a largura conforme necessário */
+    height: 560px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    display: flex; /* Usar flexbox para alinhar itens */
+    margin-right: 10px;
+  }
+  
+  .image-container {
+    flex: 1; /* Distribui igualmente o espaço entre as imagens */
+    display: flex; /* Para alinhar itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Evita que as imagens ultrapassem seus contêineres */
+  }
+  
+  
+  .card img {
+    width: 100%; /* Redimensiona a largura para preencher o contêiner pai */
+    height: 100%; /* Define a altura como metade do contêiner pai */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço alocado */
+    border-top-left-radius: 12px; /* Borda arredondada */
+    border-top-right-radius: 12px; /* Borda arredondada */
+  }
+  
+  
+  .card div {
+    flex: 1; /* Ocupa todo o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 8px; /* Espaçamento interno */
+  }
+  
+  .card h1 {
+    font-size: 1.2rem;
+  }
+  
+  .card h2 {
+    font-size: 0.9rem;
+    color: #000000aa;
+  }
+  
+  .card button {
+    background-color: #f4a460;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .card button:hover {
+    background-color: #f4a460;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: 800px;
+    }
+}
